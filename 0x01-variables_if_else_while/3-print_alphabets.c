@@ -7,12 +7,16 @@
 int main(void)
 {
 
-char ED = 'a';
+int ED;
 
-for (ED = 'a'; ED <= 'Z'; ED++)
+for (ED = 'a'; ED <= 'z'; ED++)
 {
 putchar(ED);
 }
-'\n';
+for (ED = 'A'; ED <= 'Z'; ED++)
+{
+putchar(ED);
+}
+putchar('\n');
 return (0);
 }
