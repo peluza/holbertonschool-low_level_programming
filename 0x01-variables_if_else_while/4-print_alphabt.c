@@ -7,16 +7,13 @@
 int main(void)
 {
 
-int ED;
+	char ED;
 
-for (ED = 'a'; ED <= 'z'; ED++)
-{
-putchar(ED);
-}
-if(ED!='e' && ED!='q')
-{
-putchar(ED);
-putchar('\n');
-}
-return (0);
+	for (ED = 'a'; ED <= 'z'; ED++)
+	{
+		if (ED != 'e' && ED != 'q')
+		putchar(ED);
+	}
+	putchar('\n');
+	return (0);
 }
