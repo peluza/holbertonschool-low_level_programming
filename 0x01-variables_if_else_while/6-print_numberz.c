@@ -9,11 +9,7 @@ int main(void)
 
 int ED;
 
-for (ED = 'a'; ED <= 'z'; ED++)
-{
-putchar(ED);
-}
-for (ED = 'A'; ED <= 'Z'; ED++)
+for (ED = '0'; ED <= '9'; ED++)
 {
 putchar(ED);
 }
