@@ -3,25 +3,24 @@
 #include <time.h>
 /**
 * main - Entry point
-*
 * Return: Always 0 (Success)
 */
-/* more headers goes there */
-/* betty style doc for function main goes there */
 int main(void)
 {
-
-int n;
-
+int n, x;
+char texto[] = "Last digit of";
+char textoa[] = "is";
+char textob[] = "and is 0";
+char textoc[] = "and is greater than 5";
+char textod[] = "and is less than 6 and not 0";
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-int last = n % 10;
-if (last == 5)
-printf("%d and is greater than 5\n", n);
-if (last == 0)
-printf("%d and is 0\n", n);
+x = n % 10;
+if (x > 5)
+printf("%s %d %s %i %s\n", texto, n, textoa, x, textoc);
+else if (x == 0)
+printf("%s %d %s %i %s\n", texto, n, textoa, x, textob);
 else
-printf("%d and is less than 6 and not 0\n", n);
+printf("%s %d %s %i %s\n", texto, n, textoa, x, textod);
 return (0);
 }
-
