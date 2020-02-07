@@ -10,8 +10,7 @@ int main(void)
 
 	for (ED = '0'; ED <= '9'; ED++)
 	{
-	putchar(ED);
-
+		putchar(ED);
 		if (ED < 9)
 		{
 		putchar(',');
