@@ -6,26 +6,44 @@
 int main(void)
 {
 
-int i, j;
+	int a, b;
 
-for (i = 0; i < 100; i++)
-{
-for (j = 0; j < 100; j++)
-{
-if (i < j)
-{
-putchar(i / 10 + 48);
-putchar(i % 10 + 48);
-putchar(32);
-putchar(j / 10 + 48);
-putchar(j % 10 + 48);
-if (i < 98)
-{
-putchar(44);
-putchar(32);
-}
-}
-}
+
+	for (a = 0; a < 100; a++)
+
+	{
+
+		for (b = 0; b < 100; b++)
+
+		{
+
+			if (a < b)
+
+			{
+
+				putchar(a / 10 + 48);
+
+				putchar(a % 10 + 48);
+
+				putchar(32);
+
+				putchar(b / 10 + 48);
+
+				putchar(b % 10 + 48);
+
+				if (a < 98)
+
+				{
+
+					putchar(44);
+
+					putchar(32);
+
+				}
+
+			}
+
+		}
 }
 putchar(10);
 
