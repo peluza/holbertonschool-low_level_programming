@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * main - Entry point
 *
@@ -20,7 +21,6 @@ int main(void)
 			if (a < b)
 
 			{
-
 				putchar(a / 10 + '0');
 
 				putchar(a % 10 + '0');
@@ -31,7 +31,7 @@ int main(void)
 
 				putchar(b % 10 + '0');
 
-				if (a < 99)
+				if (a < 98)
 
 				{
 
