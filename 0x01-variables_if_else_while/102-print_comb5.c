@@ -21,23 +21,23 @@ int main(void)
 
 			{
 
-				putchar(a / 10 + 48);
+				putchar(a / 10 + '0');
 
-				putchar(a % 10 + 48);
+				putchar(a % 10 + '0');
 
-				putchar(32);
+				putchar(' ');
 
-				putchar(b / 10 + 48);
+				putchar(b / 10 + '0');
 
-				putchar(b % 10 + 48);
+				putchar(b % 10 + '0');
 
 				if (a < 98)
 
 				{
 
-					putchar(44);
+					putchar(',');
 
-					putchar(32);
+					putchar(' ');
 
 				}
 
