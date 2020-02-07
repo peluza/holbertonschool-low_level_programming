@@ -1,22 +1,22 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int ED;
+        int E;
 
-	for (ED = '0' ; ED <= '9' ; ED++)
-	{
-		putchar(ED);
-		if (ED < 9)
-		{
-		putchar(',');
-		putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+        for (E = '0' ; E <= '9' ; E++)
+        {
+                putchar(E);
+                if (E < '9')
+                {
+                putchar(',');
+                putchar(' ');
+                }
+        }
+        putchar('\n');
+        return (0);
 }
