@@ -1,25 +1,21 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
-* main - Entry point
+* print_alphabet_x10 - print alphabetx10
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+void print_alphabet_x10(void)
 {
 
-int ED;
+	int ED;
+	int i;
 
-for (ED = 'a'; ED <= 'z'; ED++)
-{
-while (ED = 'z')
-{
-	for ( ED = 'a'; ED <= 'z'; ED++) 
-		putchar(ED);
-	if ( ED = 'z')
-		putchar('\n');
-	if (ED = 'z')
-		break;
-}
-}
-return (0);
+	for (i = 1 ; i <= 10 ; i++)
+	{
+		for (ED = 'a'; ED <= 'z'; ED++) 
+		{
+		_putchar(ED);
+		}
+	_putchar('\n');
+	}
 }
