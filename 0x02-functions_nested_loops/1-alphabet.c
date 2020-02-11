@@ -1,18 +1,19 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
 * main - Entry point
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+void print_alphabet(void);
 {
 
 int ED;
 
 for (ED = 'a'; ED <= 'z'; ED++)
 {
-putchar(ED);
+_putchar(ED);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
