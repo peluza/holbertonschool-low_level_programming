@@ -1,19 +1,16 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
-* main - Entry point
+* _islower - exclude letter c
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+int _islower(int c)
 {
 
-  int r;
-
-if (r = 'c')
-{
-	putchar ('\n');
-	return (1);
-}
-putchar ('\n');
-return (0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+		return (0);
 }
