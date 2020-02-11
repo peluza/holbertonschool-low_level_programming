@@ -1,8 +1,10 @@
 #include "holberton.h"
 
 /**
-* print_sign: print singn the number
+* print_sign - print singn the number
+*
 *@n: variable numeric
+*
 * Return: Always 0 (Success)
 */
 
