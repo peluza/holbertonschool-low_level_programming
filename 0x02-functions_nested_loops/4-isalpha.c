@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _islower - exclude letter c
+* _isalpha - 
 *
 * Return: Always 0 (Success)
 */
