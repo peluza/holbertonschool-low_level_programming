@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<holberton.h>
 /**
 * main - Entry point
 *
@@ -7,16 +6,13 @@
 */
 int main(void)
 {
-	char a='H', b='o', c='l', d='b', e='e', f='r', g='t', h='o', i='n';
-		putchar(a);
-		putchar(b);
-		putchar(c);
-		putchar(d);
-		putchar(e);
-		putchar(f);
-		putchar(g);
-		putchar(h);
-		putchar(i);
-		putchar('\n');
-return (0);
+	char ED[] = "Holberton";
+	int a;
+
+	for (a = 0; a <= 8; a++)
+	{
+		putchar(ED[a]);
+	}
+putchar('\n');
+return(0);
 }
