@@ -2,13 +2,15 @@
 
 /**
 * _islower - exclude letter c
-*@c - variable
+*
+* @c: character is lowercase
+*
 * Return: Always 0 (Success)
 */
 
 int _islower(int c)
 {
-
+u
 	if (c >= 97 && c <= 122)
 	{
 		return (1);
