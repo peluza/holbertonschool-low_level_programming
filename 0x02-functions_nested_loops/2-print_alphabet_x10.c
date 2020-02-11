@@ -17,7 +17,7 @@ while (ED = 'z')
 		putchar(ED);
 	if ( ED = 'z')
 		putchar('\n');
-	if (ED = 'z'; )
+	if (ED = 'z')
 		break;
 }
 }
