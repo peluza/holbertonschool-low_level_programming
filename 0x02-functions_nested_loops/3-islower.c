@@ -1,9 +1,11 @@
 #include "holberton.h"
+
 /**
 * _islower - exclude letter c
-*
+*@c - variable
 * Return: Always 0 (Success)
 */
+
 int _islower(int c)
 {
 
