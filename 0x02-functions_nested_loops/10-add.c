@@ -8,9 +8,11 @@
 * Return: suma (Success)
 */
 
-int add(int a, int b, int suma)
+int add(int a, int b)
 
 {
+
+	int suma = 0;
 
 	suma = a + b;
 
