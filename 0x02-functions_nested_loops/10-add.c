@@ -3,13 +3,11 @@
 /**
 * add - suma the caracter number
 *@a: number one
-*@b:numebr two
-*@suma:suma
+*@b: numebr two
 * Return: suma (Success)
 */
 
 int add(int a, int b)
-
 {
 
 	int suma = 0;
