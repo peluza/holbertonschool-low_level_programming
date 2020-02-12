@@ -3,14 +3,11 @@
 /**
 * main - causes an infinite loop
 * Return: 0
-* missing a conditional
-*
 */
-
 
 int main(void)
 {
-        int i;
+        int i; /* missing a conditional*/
 
         printf("Infinite loop incoming :(\n");
 
