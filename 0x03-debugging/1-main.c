@@ -7,13 +7,13 @@
 
 int main(void)
 {
-        int i; /* missing a conditional*/
+        int i;
 
         printf("Infinite loop incoming :(\n");
 
         i = 0;
 
-        while (i < 10)
+        while (i < 10) /*the number is alwer 0*/
         {
                 putchar(i);
         }
