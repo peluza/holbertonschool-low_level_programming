@@ -1,18 +1,18 @@
 #include "holberton.h"
 
 /**
-* add - exclude letter c
-*@a - number one
-*@b - numebr two
-*@suma - suma
+* add - suma the caracter number
+*@a: number one
+*@b:numebr two
+*@suma:suma
 * Return: suma (Success)
 */
 
-int add(int a, int b)
+int add(int a, int b, int suma)
 
 {
-	int suma = 0;
 
-		suma = a + b;
-return (suma);
+	suma = a + b;
+
+	return (suma);
 }
