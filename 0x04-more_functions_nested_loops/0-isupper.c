@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* _islower - exclude letter c
+* _isupper - the search word in the upper
 *
 *@c: character is lowercase
 *
