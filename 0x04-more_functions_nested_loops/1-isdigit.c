@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-* _islower - exclude letter c
+*_isdigit - the search carater numeber
 *
-* @c: character is lowercase
+*@c: character is lowercase
 *
 * Return: Always 0 (Success)
 */
