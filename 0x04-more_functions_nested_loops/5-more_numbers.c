@@ -11,8 +11,6 @@ void more_numbers(void)
 {
 	int a;
 	int i;
-	int k;
-	int b = 8;
 
 	for (i = 1 ; i <= 10 ; i++)
 	{
@@ -20,10 +18,10 @@ void more_numbers(void)
 		{
 			_putchar(a + '0');
 			
-			if (a == 9)
-			{	
-				k = a - b;
-				_putchar(k + '0');
+			if (a > 9)
+			{
+				for (a =  	
+				_putchar(a + '0');
 			}
 
 		}
