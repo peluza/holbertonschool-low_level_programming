@@ -3,7 +3,7 @@
 /**
 * _islower - exclude letter c
 *
-* @c: character is lowercase
+*@c: character is lowercase
 *
 * Return: Always 0 (Success)
 */
