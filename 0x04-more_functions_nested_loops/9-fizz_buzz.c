@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -13,12 +14,8 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i == 100)
-		{
-			printf("%s", "Buzz");
-		}
 
-		else if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("%s", "FizzBuzz ");
 		}
@@ -39,6 +36,13 @@ int main(void)
 
 		}
 
+		if (!(i == 100))
+		{
+			printf(" ");
+		}
+
+
 	}
 	printf("\n");
+	return (0);
 }
