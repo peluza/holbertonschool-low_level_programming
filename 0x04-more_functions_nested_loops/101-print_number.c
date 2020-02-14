@@ -13,14 +13,28 @@ void print_number(int n)
 {
 
 	int a;
-	
-	for (a = n; a <=  n; a++)
+	int i;
+
+	for (i = n ; i <= n ; i++)
 	{
-		if (a > 9)
+		for (a = n; a <=  n; a++)
 		{
+
+			if (a > n)
+			{
 			_putchar((a / 10) + '0');
+			}
+			for (a = n; a <=  n; a++)
+                {
+                        if (a > n)
+                        {
+                        _putchar((a / 10) + '0');
+                        }
+                 _putchar((a % 10) + '0');
+                }
+
+		 _putchar((a % 10) + '0');
 		}
-		_putchar((a % 10) + '0');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
