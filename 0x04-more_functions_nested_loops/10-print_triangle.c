@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* print_square - the print a square
+* print_triangle - the print a square
 *
 * @size: numbers the line
 *
