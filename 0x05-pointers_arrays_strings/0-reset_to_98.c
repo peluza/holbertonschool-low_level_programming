@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * reset_to_98 - reset the valor n to 93
  *
- * Return: Always 0.
+ *@n: number
  */
 
 void reset_to_98(int *n)
