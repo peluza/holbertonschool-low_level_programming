@@ -36,7 +36,7 @@ return (dest);
 int _strlen(char *s)
 {
 	char a;
-	int x, c;
+	int x = 0, c = 0;
 
 	a = s[0];
 
