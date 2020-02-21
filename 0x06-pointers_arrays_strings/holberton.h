@@ -1,6 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+char *leet(char *);
 char *cap_string(char *a);
 char *string_toupper(char *a);
 void reverse_array(int *a, int n);
