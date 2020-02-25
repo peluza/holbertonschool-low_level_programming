@@ -1,6 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+void print_chessboard(char (*a)[8]);
 char *_strpbrk(char *s, char *accept);
 unsigned int _strspn(char *s, char *accept);
 char *_strchr(char *s, char c);
