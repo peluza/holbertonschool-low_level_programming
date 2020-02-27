@@ -35,6 +35,7 @@ int is_prime_number1(int n, int b)
 int is_prime_number(int n)
 
 {
+	int b;
 	int d = is_prime_number1(n, b);
 
 	if (d == 2)
@@ -43,8 +44,6 @@ int is_prime_number(int n)
         }
 	else 
 	{
-		return (0);
+		return	(is_prime_number1(n, 1));
 	}
-	
-	return	(is_prime_number1(n, 1));
 }
