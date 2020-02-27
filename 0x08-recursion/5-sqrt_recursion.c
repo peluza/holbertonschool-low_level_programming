@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion1  - the funsion is multiple
+ * _sqrt_recursion - the character number for the multiple
+ * _sqrt_recursion1 - the funsion is multiple
  * @n: the character number
  * @b: the caracter number multipiler
  *
@@ -22,13 +23,8 @@ int _sqrt_recursion1(int n, int b)
 	else
 		return (_sqrt_recursion1(n, b + 1));
 }
-/* _sqrt_recursion - the character number for the multiple 
- * _sqrt_recursion1  - the funsion is multiple
- * @n: the character number
- * @b: the caracter number multipiler
- *
- * Return: the result.
- */
+
+/* _sqrt_recursion - the character number for the multiplie */
 
 int _sqrt_recursion(int n)
 {
