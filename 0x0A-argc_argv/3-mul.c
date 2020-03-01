@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - the inition of the software
@@ -11,27 +12,38 @@
 
 int main(int argc, char *argv[])
 {
-	int e, d, i, m = 0;
+	int i, e, d,  mul = 0;
 
 	e = atoi(*(argv + 1));
 	d = atoi(*(argv + 2));
 
-	for (i = 0; argc <= '\0'; argv++)
-	{
-		if (!(argv[i]  )
+	for (i = 1; argv[i] != 0; i++)
+	{	
+		if (isalpha(*(argv[i])))
 		{
-			printf("Error");
+			printf("Error\n");
+			return (1);
+		}
+		if (!abs(*(argv[i])))
+		{
+			printf("Error\n");
+			return (1);
 		}
 	}
+
+		if (argc == 3)
+		{
+			mul = e * d;
+			printf("%d\n", mul);
+			return (0); 
+		}
+
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	
-	if (argc <= 1)
-	{
-		printf("Error");
-	}
-	else
-	{
-		m = e * d;
-		printf("%i\n", m);
-	}
+
 	return (0);
 }
