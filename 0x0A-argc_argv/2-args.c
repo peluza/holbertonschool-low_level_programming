@@ -8,14 +8,15 @@
  * Return: accept.
  */
 
-int main(int __attribute__((unused))argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i;
 
-	while (i <= argc) 
+	if ( )
+
+	for (i = 0; i <= argc; argv++) 
 	{
-		argv++;
 		printf("%s\n", argv[i]);
 	}
-	return (0);
+
 }
