@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i, e, d,  mul = 0;
+	char r[5] = "Error"; 
 
 	e = atoi(*(argv + 1));
 	d = atoi(*(argv + 2));
@@ -21,29 +22,27 @@ int main(int argc, char *argv[])
 	{	
 		if (isalpha(*(argv[i])))
 		{
-			printf("Error\n");
+			printf("%s\n", r);
 			return (1);
 		}
 		if (!abs(*(argv[i])))
 		{
-			printf("Error\n");
+			printf("%s\n", r);
 			return (1);
 		}
 	}
 
-		if (argc == 3)
-		{
-			mul = e * d;
-			printf("%d\n", mul);
-			return (0); 
-		}
+	if (argc == 3)
+	{
+		mul = e * d;
+		printf("%d\n", mul);
+		return (0); 
+	}
 
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-	
-
+	else
+	{
+		printf("%s\n", r);
+		return (1);
+	}
 	return (0);
 }
