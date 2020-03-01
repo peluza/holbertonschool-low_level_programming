@@ -11,11 +11,19 @@
 
 int main(int argc, char *argv[])
 {
-	int e, d, m = 0;
+	int e, d, i, m = 0;
 
 	e = atoi(*(argv + 1));
 	d = atoi(*(argv + 2));
 
+	for (i = 0; argc <= '\0'; argv++)
+	{
+		if (!(argv[i]  )
+		{
+			printf("Error");
+		}
+	}
+	
 	if (argc <= 1)
 	{
 		printf("Error");
