@@ -3,12 +3,10 @@
 
 /**
  * *str_concat - the funtion is cocatene in the n
- * @s: the command _strlen
- * Return: dest
+ * @s1: the command is punters one
+ * @s2: the comman is punters two
+ * Return: result of the operation
  */
-
-
-int _strlen(char *s);
 
 char *str_concat(char *s1, char *s2)
 {
