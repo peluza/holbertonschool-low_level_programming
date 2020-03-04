@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 /**
- * *argstostr - the funtion concatenates all the arguments
- * @ac:
- * @av:
+ * argstostr - the funtion concatenates all the arguments
+ * @ac: the count a chars
+ * @av: the chars nex to a title
  *
+ *
+ * Return: av
  */
 
 char *argstostr(int ac, char **av)
@@ -16,21 +18,17 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	if (av == NULL)
 		return (NULL);
-	else
-	{
-		for (i = 0; i < ac; i++)
-		{
-			if (av[i] == NULL)
-			{
-				return (NULL);
-			}
-			else
-			{
-				printf("%s\n", av[i]);
-			}
-		}
 
+	for (i = 0; i < ac; i++)
+	{
+		if (av[i] == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			printf("%s\n", av[i]);
+		}
 	}
 	return (av[i]);
 }
-
