@@ -2,17 +2,22 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid - prints a grid of integers
- * @width: width of the grid
- * @height: height of the grid
+ * free_grid - prints a grid of integers
+ * @grid: the chars is arrays
+ * @height: height is height
  *
- * Return: Nothing.
  */
 
 void free_grid(int **grid, int height)
 {
+	int i;
 
-	
-
-	
+	if ((grid != 0) || (height != 0))
+	{
+		for (i = 0; i < height; i++)
+		{
+			free(grid[i]);
+		}
+		free(grid);
+	}
 }
