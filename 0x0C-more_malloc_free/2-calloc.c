@@ -23,6 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	e = malloc(nmemb * size);
 	if (e == NULL)
 	{
+		free(e);
 		return (NULL);
 	}
 	for (i = 0; e[i] != '\0'; i++)
