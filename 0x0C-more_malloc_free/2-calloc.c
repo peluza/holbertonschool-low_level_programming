@@ -18,12 +18,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if ((nmemb == 0) || (size == 0))
 	{
-		return (0);
+		return (NULL);
 	}
 	e = malloc(nmemb * size);
-	if (e == 0)
+	if (e == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	for (i = 0; e[i] != '\0'; i++)
 
