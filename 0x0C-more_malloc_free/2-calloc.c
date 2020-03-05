@@ -16,18 +16,18 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	char *e;
 
-	for (i = 0; i != '\0'; i++)
-	{
-
-	}
 	if ((nmemb == 0) || (size == 0))
 	{
 		return (0);
 	}
-	e = malloc(sizeof(char) * ((i) + 1));
+	e = malloc(nmemb * size);
 	if (e == 0)
 	{
 		return (0);
 	}
+	for (i = 0; e[i] != '\0'; i++)
+
+		e[i] = 0;
+
 	return (e);
 }
