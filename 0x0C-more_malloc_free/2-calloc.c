@@ -15,20 +15,21 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
 	char *e;
+	void *a;
 
 	if ((nmemb == 0) || (size == 0))
 	{
 		return (NULL);
 	}
-	e = malloc(nmemb * size);
-	if (e == NULL)
+	a = malloc(nmemb * size);
+	if (a == NULL)
 	{
-		free(e);
 		return (NULL);
 	}
-	for (i = 0; e[i] != '\0'; i++)
+	e = a;
+	for (i = 0; i < (nmemb * size); i++)
 
-		e[i] = 0;
+		e[i] = '\0';
 
 	return (e);
 }
