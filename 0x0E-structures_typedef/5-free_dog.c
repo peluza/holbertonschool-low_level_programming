@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * print_dog - print the struct dog
+ * free_dog - print the struct dog
  * @d: punters
  * Return void
  */
