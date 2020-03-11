@@ -2,10 +2,31 @@
 #include "function_pointers.h"
 
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
+ * int_index - check if a number is equal to 98
+ * @array: the array at funtion
+ * @size: the size at funtion
+ * @cmp: the cmp is punters at funtion
  *
- * Return: 0 if false, something else otherwise.
+ * Return: -1
  */
 
+int int_index(int *array, int size, int (*cmp)(int))
+{
+	int i;
 
+	if (size <= 0)
+	{
+		return (-1);
+	}
+	if (cmp != 0 && array != 0 && size != 0)
+	{
+		for (i = 0; i < size; i++)
+		{
+			if (cmp(array[i]) == 1)
+			{
+				return (i);
+			}
+		}
+	}
+	return (-1);
+}
