@@ -2,21 +2,22 @@
 #include "function_pointers.h"
 
 /**
- * print_elem - prints an integer
- * @elem: the integer to print
- *
+ * array_iterator - prints an integer
+ * @array: the array at archive
+ * @size: the size of the number at archive
+ * @action: the punter at funtion
  * Return: Nothing.
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
-	int *p;
+	unsigned int i;
 
-	p = size;
-
-	for (i = 0; array[i] <= p; i++)
+	if (size != 0)
 	{
-		(*action)(i);
+		for (i = 0; i < size; i++)
+		{
+			(*action)(array[i]);
+		}
 	}
 }
