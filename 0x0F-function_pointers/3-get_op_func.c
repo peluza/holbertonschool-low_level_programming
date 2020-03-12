@@ -2,11 +2,12 @@
 #include "3-calc.h"
 #include <string.h>
 #include <stdlib.h>
+
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
+ * get_op_func - the funtion to identifiable the symbols
+ * @s: the punters the identifiable for the symbols
  *
- * Return: 0 if false, something else otherwise.
+ * Return: is 0
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -26,11 +27,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	while (ops[i].op)
 	{
-		if (strcmp(ops[i].op == s))
+		if (strcmp(ops[i].op, s) == 0)
 		{
-			return (op[i].f);
+			return (ops[i].f);
 		}
 		i++;
 	}
-	return(0);
+	return (0);
 }
