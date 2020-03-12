@@ -14,6 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b, e;
+	char *opr;
 	int (*ca)(int, int);
 
 
@@ -24,18 +25,19 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	if (get_op_func(argv[2]) != NULL || argv[1] == NULL || argv[3] == NULL)
+	opr = argv[2];
+	if (get_op_func(opr) != NULL || argv[1] == NULL || argv[3] == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 
 	}
-	if ((*argv[2] == 47 || *argv[2]  == 37) && b == 0)
+	if ((*opr == 47 || *opr == 37) && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	ca = get_op_func(argv[2]);
+	ca = get_op_func(opr);
 	e = ca(a, b);
 	printf("%d\n", e);
 	return (0);
