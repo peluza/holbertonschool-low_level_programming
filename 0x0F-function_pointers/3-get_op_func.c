@@ -14,9 +14,6 @@ int (*get_op_func(char *s))(int, int)
 {
 	int i = 0;
 
-	if (s != 0)
-		return (0);
-
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},

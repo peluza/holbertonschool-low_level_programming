@@ -23,16 +23,16 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	opr = argv[2];
-	if (get_op_func(opr) != NULL || argv[1] == NULL || argv[3] == NULL)
+	if (get_op_func(argv[2]) == NULL || argv[1] == 0 || argv[3] == 0)
 	{
 		printf("Error\n");
 		exit(99);
 
 	}
-	if ((*opr == 47 || *opr == 37) && b == 0)
+	a = atoi(argv[1]);
+        b = atoi(argv[3]);
+        opr = argv[2];
+	if ((*opr == '/' || *opr == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
