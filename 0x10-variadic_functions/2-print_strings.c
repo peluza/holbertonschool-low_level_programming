@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - print the number separator for colom
+ * print_strings - print the chars separator for colom
  * @separator: this is chars colom
  * @n: the chars is a number
  * Return: Always 0
