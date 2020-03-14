@@ -13,17 +13,11 @@
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	int x, y;
+	int x = 0, y = 1;
 	char *a;
 
-	x = 0;
-	y = 0;
-
 	va_start(list, format);
-
-	x = 0;
 	while (format && format[x])
-
 	{ 
 		switch (format[x])
 		{
@@ -37,15 +31,13 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double));
 				break;
 			case 's':
-				printf ("%s", va_arg(list, char*));
-				break;
-
+				a = va_arg(list, char*);
 				if (a != NULL)
 				{
 					printf("%s", a);
 					break;
 				}
-				printf ("nill");
+				printf("(nil)");
 				break;
 			default:
 				y = 0;
