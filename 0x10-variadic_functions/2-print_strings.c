@@ -19,19 +19,21 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		printf("nill");
 	}
-	if (separator != 0)
-	{
-		va_start(list, n);
+	va_start(list, n);
 
-		for (i = 0 ; i < n; i++)
+	for (i = 0 ; i < n; i++)
+	{
+		a = va_arg(list, char *);
+		printf("%s", a);
+		if (separator != 0)
 		{
-			a = va_arg(list, char *);
-			printf("%s", a);
+
 			if (i < (n - 1))
 				printf("%s", separator);
 		}
-		putchar('\n');
-
-		va_end(list);
 	}
+	putchar('\n');
+
+	va_end(list);
 }
+
