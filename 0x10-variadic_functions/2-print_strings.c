@@ -23,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			a = va_arg(list, char *);
 			if (n == 0)
-				printf("(nill)");
+				printf("(nil)");
 			else
 			{
 				printf("%s", a);
@@ -35,7 +35,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			a = va_arg(list, char *);
 			if (n == 0)
-				printf("(nill)");
+				printf("(nil)");
 			else
 			{
 				printf("%s", a);
@@ -45,5 +45,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	putchar('\n');
 
 	va_end(list);
-
 }
