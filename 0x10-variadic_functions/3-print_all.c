@@ -4,8 +4,7 @@
 
 /**
  * print_all - print the chars  separator for colom
- * @separator: this is chars colom
- * @n: the chars is a number
+ * @format: this is chars colom
  * Return: Always 0
  */
 
@@ -18,7 +17,7 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 	while (format && format[x])
-	{ 
+	{
 		switch (format[x])
 		{
 			case 'c':
