@@ -1,8 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
 /**
  * add_node - add of the nodes
  * @head: the lis for the estruct
