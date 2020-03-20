@@ -24,17 +24,20 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return (0);
 	}
-		if (*head == 0)
-		{
-			*head = new;
-			return (new);
-		}
-		else
-		{
-			a = *head;
-			while (a->next != 0)
-				a = a->next;
-			a->next = new;
-			return (new);
-		}
+	if (*head == 0)
+	{
+		*head = new;
+		return (new);
+	}
+	else
+	{
+		a = *head;
+		while (a->next != 0)
+			a = a->next;
+		a->next = new;
+		return (new);
+	}
+
+	free(new->str);
+	free(new);
 }
