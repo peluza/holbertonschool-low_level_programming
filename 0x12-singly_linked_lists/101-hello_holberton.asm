@@ -2,7 +2,7 @@
 ;
 .data
 ;
-	inimensaje db "Hello, Holberton" ,10,13 "s"
+	inimensaje db "Hello, Holberton" ,10,13 "S"
 ;
 .code
 ;
