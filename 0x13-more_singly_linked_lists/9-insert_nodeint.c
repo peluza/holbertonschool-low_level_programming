@@ -10,51 +10,33 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int i = 0;
-	listint_t *new, *a = *head;
+	listint_t *new, *tmp, *aux = *head;
+	unsigned int i, j;
 
-	if (head == NULL)
+	for (i = 0; aux != NULL; i++)
+	{
+		aux = (*aux).next;
+	}
+	if (idx > i)
 		return (NULL);
-	if (idx == 0)
-	{
-		a = add_nodeint(head, n);
-		return (a);
-	}
-	while (i < idx)
-	{
-		a = a->next;
-		if (a == NULL)
-			return (NULL);
-		i++;
-	}
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = a->n;
-	new->next = a->next;
-	a->n = n;
-	a->next = new;
-	return (a);
-}
-#include "lists.h"
-/**
- * add_nodeint - add of the nodes
- * @head: the lis for the estruct
- * @n: the numbero to list
- * Return: the name of the nodos.
- */
-
-listint_t *add_nodeint(listint_t **head, const int n)
-{
-	listint_t *new;
-
+	(*new).n = n;
+	if (idx == 0)
+	{
+		(*new).next = *head;
+		*head = new;
+		return (new);
+	}
 	if (head == NULL)
 		return (NULL);
-	new = (listint_t *)malloc(sizeof(listint_t));
-	if (new == 0)
-		return (0);
-	new->n = n;
-	new->next = *head;
-	*head = new;
+	tmp = *head;
+	for (j = 0; j < idx - 1 && tmp->next; j++)
+	{
+		tmp = (*tmp).next;
+	}
+	(*new).next = (*tmp).next;
+	(*tmp).next = new;
 	return (new);
 }
