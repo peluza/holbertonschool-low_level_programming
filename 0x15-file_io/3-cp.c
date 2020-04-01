@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
 int cpy_file(int src, int dest, char *name_src, char *name_dest)
 {
-	int r, w;
+	int r, w, close_s, close_d;
 	char buffer[1024];
 
 	do {
@@ -61,14 +61,14 @@ int cpy_file(int src, int dest, char *name_src, char *name_dest)
 			exit(99);
 		}
 	} while (r == 1024);
-	close(src);
-	if (close(src) == -1)
+	close_s = close(src);
+	if (close_s == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src);
 		exit(100);
 	}
-	close(dest);
-	if (close(dest) == -1)
+	close_d = close(dest);
+	if (close_d == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest);
 		exit(100);
