@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- *print_list - prints all the elemts of the dlistsint_s
+ *print_dlistint - prints all the elemts of the dlistsint_s
  *@h: the lists for the estruct
- *@Return:  the name of the nodos
+ *Return:  the name of the nodos
  */
 
 size_t print_dlistint(const dlistint_t *h)
@@ -11,8 +11,8 @@ size_t print_dlistint(const dlistint_t *h)
 	unsigned int nodes = 0;
 
 	if (h == 0)
-		return(0);
-	while(h != 0)
+		return (0);
+	while (h != 0)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
