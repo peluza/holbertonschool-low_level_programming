@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
- *get_dnodeint_at_index - get the value of the node
- *@head: the chars of the lists
- *@index: position of the nodes
- *Return: of the head in the position the index
+ *insert_dnodeint_at_index - insert at vlaue the index in the dlistint_t
+ *@h: the chars of the lists
+ *@idx: position of the nodes
+ *@n: the value of the number at insert
+ *Return: the value at insert
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
