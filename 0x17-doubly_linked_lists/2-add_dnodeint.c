@@ -3,7 +3,7 @@
 /**
  *add_dnodeint - add the nodes of the dlistint_t
  *@head: the chars of the lists
- *n: the number coitainrs in the lists
+ *@n: the number coitainrs in the lists
  *Return: of the head
  */
 
