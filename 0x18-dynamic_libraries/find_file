@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "name of the file"
+read a
+find / -name "*$a*"  2>/dev/null -exec cp {} . \; ||  ls -l
+
