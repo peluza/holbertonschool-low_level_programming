@@ -1,7 +1,7 @@
+#include "hash_tables.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "hash_tables.h"
 
 /**
  * main - check the code for Holberton School students.
@@ -10,10 +10,10 @@
  */
 int main(void)
 {
-	hash_table_t *ht;
+        hash_table_t *ht;
 
-	ht = hash_table_create(1024);
-	print_ht(ht);
-	printf("%p\n", (void *)ht);
-	return (EXIT_SUCCESS);
+        ht = hash_table_create(1024);
+        hash_table_set(ht, "betty", "holberton");
+
+        return (EXIT_SUCCESS);
 }
