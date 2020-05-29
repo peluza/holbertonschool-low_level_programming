@@ -26,22 +26,11 @@ void hash_table_delete(hash_table_t *ht)
  */
 void free_list(hash_node_t *head)
 {
-	hash_node_t *current;
-	hash_node_t *n;
-
-	current = head;
-
-	if (head)
-	{
-		while (current != NULL)
-		{
-			if (current->key)
-				free(current->key);
-			if (current->value)
-				free(current->value);
-			n = current->next;
-			free(current);
-			current = n;
-		}
-	}
+	if (head == NULL)
+		return;
+	if ((*head).next != NULL)
+		free_list(head->next);
+	free(head->key);
+	free(head->value);
+	free(head);
 }
