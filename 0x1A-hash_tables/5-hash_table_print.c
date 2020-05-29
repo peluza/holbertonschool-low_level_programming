@@ -17,10 +17,10 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			while (ht->array[i] != NULL)
 			{
-				if (inter > 0)
+				if (inter == 1)
 					printf(", ");
-				printf("\'%s\': \'%s\'", ht->array[i]->key, ht->array[i]->value);
-				inter++;
+				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+				inter = 1;
 				ht->array[i] = ht->array[i]->next;
 			}
 		}
