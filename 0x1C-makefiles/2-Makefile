@@ -7,5 +7,5 @@ NAME = holberton
 .PHONY: all
 
 all: NAME
-NAME: $(SRC)
-	$(CC) $(SRC) -o $(NAME)
+NAME: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
