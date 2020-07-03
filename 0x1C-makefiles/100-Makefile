@@ -7,8 +7,8 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 
-all: m.h $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+all: m.h $(SRC:.c=.o)
+	$(CC) $(CFLAGS) $(SRC:.c=.o)) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
