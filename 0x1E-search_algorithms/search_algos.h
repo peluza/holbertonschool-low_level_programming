@@ -1,5 +1,5 @@
-#ifndef __HASH_TABLES_H__
-#define __HASH_TABLES_H__
+#ifndef __SEARCH_ALGOS__
+#define __SEARCH_ALGOS__
 
 #include <stdio.h>
 #include <stdlib.h>
