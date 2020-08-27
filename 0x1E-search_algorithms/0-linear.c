@@ -2,7 +2,9 @@
 
 /**
  * linear_search - Linear search algorithm
- *
+ * @array: is a pointer to the first element of the array to search
+ * @size: size of the array
+ * @value: the value at search
  * Return: number of the line
  */
 
