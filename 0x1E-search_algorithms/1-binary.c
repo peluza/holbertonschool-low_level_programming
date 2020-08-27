@@ -2,7 +2,9 @@
 
 /**
  * binary_search -  Binary search algorithm
- *
+ * @array: is a pointer to the first element of the array to search
+ * @size: size of the array
+ * @value: the value at search
  * Return: number of the line
  */
 
@@ -21,18 +23,15 @@ int binary_search(int *array, size_t size, int value)
 			if (i == r)
 				printf("%d\n", array[i]);
 			else
-				printf("%d,", array[i]);
+				printf("%d, ", array[i]);
 		}
 		m = (l + r) / 2;
-		if (array[m] < value)
+		if (array[m] == value)
+			return (m);
+		else if (array[m] < value)
 			l = m + 1;
-		if (array[m] > value)
-			r = m - 1;
 		else
-		{
-			if (array[m] == value)
-				return (m);
-		}
+			r = m - 1;
 	}
 	return (-1);
 }
